@@ -1,7 +1,8 @@
-.navbar, .navbar-spacer {
+.navbar {
   z-index: $zIndex-front;
   border-bottom: 1px solid #eee;
-  padding: 0.25em 4em;
+  padding: 0.25em 4.25em;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
 }
 
 .navbar-brand {
