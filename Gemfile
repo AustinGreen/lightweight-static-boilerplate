@@ -6,7 +6,6 @@ gem "middleman", "~>3.3.12"
 gem "middleman-livereload", "~> 3.1.0"
 gem "jquery-middleman"
 gem "middleman-minify-html"
-gem 'font-awesome-sass'
 gem 'image_optim'
 gem 'middleman-imageoptim'
 gem "middleman-sprockets"

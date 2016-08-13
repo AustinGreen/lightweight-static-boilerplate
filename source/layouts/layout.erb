@@ -13,7 +13,7 @@
   <%= stylesheet_link_tag "all" %>
 </head>
 <body class="<%= page_classes %>">
-  <nav class="navbar">
+  <nav class="navbar navbar-fixed">
     <div class="container-flex">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
@@ -35,17 +35,6 @@
           <a class="navbar-link" href="/contact">Contact</a>
         </li>
       </ul>
-<!--       <ul class="navbar-list">
-        <li class="navbar-item">
-          <a class="navbar-link navbar-icon" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg" title="Twitter" aria-hidden="true"></i></a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link navbar-icon" href="https://twitter.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" title="Facebook" aria-hidden="true"></i></a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link navbar-icon" href="https://twitter.com/" target="_blank"><i class="fa fa-instagram fa-lg" title="Instagram" aria-hidden="true"></i></a>
-        </li>
-      </ul> -->
     </div>
   </nav>
   <%= yield %>

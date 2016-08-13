@@ -5,6 +5,29 @@
   box-shadow: 0 1px 5px rgba(0,0,0,0.13);
 }
 
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  top: 0;
+}
+
+.navbar-static {
+  border-bottom: none;
+  padding: 2.25em 4.25em 1.25em;
+  box-shadow: none;
+
+  .container-flex {
+    flex-direction: column;
+  }
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-link {
+    font-size: 0.75em;
+  }
+}
+
 .navbar-brand {
   font-size: 1.2em;
   font-weight: 600;
@@ -30,7 +53,8 @@
 }
 
 .navbar-link {
-  margin-left: 6em;
+  margin-left: 3em;
+  margin-right: 3em;
   font-size: em(11px, 15px);
   font-weight: 600;
   line-height: 6.4rem;
