@@ -14,15 +14,6 @@ $font-weight--medium     : 400;
 $font-weight--bold       : 700;
 $font-weight--ultra-bold : 900;
 
-// Colors
-$light-grey: #e1e1e1 !default;
-$dark-grey: #333 !default;
-$primary-color: #33c3f0 !default;
-$secondary-color: lighten($dark-grey, 13.5%) !default;
-$border-color: #bbb !default;
-$link-color: #1eaedb !default;
-$font-color: #222 !default;
-
 // Descriptive Base Colors
 $white : #fff;
 $black : #0b0b0b;
@@ -110,3 +101,11 @@ $column-margin: 4% !default; // space between columns
 
 // Constants
 $GOLDEN-RATIO: 1.61803398875;
+
+// Deprecated
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
