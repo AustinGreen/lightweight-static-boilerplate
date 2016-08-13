@@ -1,38 +1,5 @@
 //= require jquery
-//= require bootstrap-sprockets
 //= require_tree .
-
-// Init skrollr and disable on mobile
-if(Modernizr.touch){
-	var s = skrollr.init();
-	s.destroy();
-}
-
-( function( $ ) {
-
-	function enableSkrollr() {
-		// Enable Skroll only for non-touch devices
-		if(!Modernizr.touch){
-			var s = skrollr.init({forceHeight: false});
-		}
-	}
-
-	function disableSkrollr() {
-		// Destroy Skrollr
-		var s = skrollr.init();
-		s.destroy();
-	}
-
-	enquire.register("screen and (min-width: 768px)", {
-		match : function() {
-			enableSkrollr();
-		},  
-		unmatch : function() {
-			disableSkrollr();
-		}
-	});
-
-} )( jQuery );
 
 // Smooth Scroll
 $(function() {

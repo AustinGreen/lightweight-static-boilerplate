@@ -1,0 +1,40 @@
+.navbar, .navbar-spacer {
+  z-index: $zIndex-front;
+  border-bottom: 1px solid #eee;
+  padding: 0.25em 4em;
+}
+
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-decoration: none;
+
+  &:hover {
+    color: palette(black, light);
+  }
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+}
+
+.navbar-link {
+  margin-left: 6em;
+  font-size: em(11px, 15px);
+  font-weight: 600;
+  line-height: 6.4rem;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-decoration: none;
+}

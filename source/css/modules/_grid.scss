@@ -17,6 +17,12 @@
   box-sizing: border-box;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
 .column,
 .columns {
   width: 100%;
@@ -25,7 +31,7 @@
 }
 
 // For devices larger than 400px
-@media (#{$bp-larger-than-mobile}) {
+@include mq(mobile) {
   .container {
     width: $container-width-larger-than-mobile;
     padding: 0;
@@ -33,7 +39,7 @@
 }
 
 // For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
+@include mq(phablet) {
   .container {
     width: $container-width-larger-than-phablet;
   }
