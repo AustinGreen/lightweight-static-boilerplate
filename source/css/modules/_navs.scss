@@ -63,4 +63,14 @@
   letter-spacing: .2rem;
   text-decoration: none;
   transition: $clean-transition;
+
+  @include mq(tablet) {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  @include mq(desktop) {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
