@@ -63,8 +63,9 @@
 }
 
 .navbar-link {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding: 0.8em 1em;
   font-size: em(11px, 15px);
   font-weight: 600;
   line-height: 6.4rem;
@@ -73,14 +74,22 @@
   letter-spacing: .2rem;
   text-decoration: none;
   transition: $clean-transition;
+  border-top: 3px solid rgba(0,0,0,0);
+  border-bottom: 3px solid rgba(0,0,0,0);
+
+  &:hover {
+    border-top: 3px solid map-get($ui-colors, default);
+    border-bottom: 3px solid map-get($ui-colors, default);
+    color: palette(black, light);
+  }
 
   @include mq(tablet) {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   @include mq(desktop) {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }

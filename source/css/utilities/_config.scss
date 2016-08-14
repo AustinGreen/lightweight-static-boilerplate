@@ -18,7 +18,7 @@ $font-weight--ultra-bold : 900;
 $white : #fff;
 $black : #0b0b0b;
 $grey  : #797e83;
-$fountain-blue  : #52bab3;
+$curious-blue   : #3498db;
 $emerald        : #5ece7f;
 $sunglo         : #e67478;
 $coral          : #ff784f;
@@ -26,7 +26,7 @@ $purple-majesty : #9279c3;
 $scooter        : #39add1;
 
 // Color Usage
-$color-primary   : $fountain-blue;
+$color-primary   : $curious-blue;
 $color-secondary : $scooter;
 $color-accent    : $emerald;
 $color-shadow    : rgba($black, .2);
@@ -51,7 +51,7 @@ $color-palettes: (
 // UI Colors
 
 $ui-colors: (
-  default : $fountain-blue,
+  default : $curious-blue,
   success : $emerald,
   error   : $sunglo,
   warning : $coral,
