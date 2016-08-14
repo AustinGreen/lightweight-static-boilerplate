@@ -6,5 +6,5 @@ A modern starting point for building static websites. Utilizes middleman, skelet
 - [X] Build nav component
 - [X] Integrate other sass libraries
 - [X] Add life to page
-- [] Explore guff and slick
-- [] Integrate code to [slide down nav on mobile](https://codyhouse.co/demo/secondary-sliding-navigation/index.html) and [autohide on scroll](https://codyhouse.co/demo/auto-hiding-navigation/nav-hero-subnav.html)
+- [ ] Explore guff and slick
+- [ ] Integrate code to [slide down nav on mobile](https://codyhouse.co/demo/secondary-sliding-navigation/index.html) and [autohide on scroll](https://codyhouse.co/demo/auto-hiding-navigation/nav-hero-subnav.html)
