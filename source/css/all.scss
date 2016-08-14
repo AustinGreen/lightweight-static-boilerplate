@@ -214,5 +214,36 @@
   padding: 2em 1em;
 }
 
+.flex-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  header {
+    border-right: 2px solid white;
+    padding-right: 0.5em;
+  }
+
+  h5 {
+    font-size: 2rem;
+    text-align: left;
+    text-shadow: none;
+    line-height: 8rem;
+    margin-bottom: 0;
+  }
+
+  section {
+    width: 66.6666667%;
+  }
+
+  p {
+    font-size: 1.7rem;
+    text-align: left;
+    text-shadow: none;
+    margin-bottom: 0;
+  }
+}
+
 
 
