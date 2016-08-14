@@ -34,8 +34,6 @@ GEM
     execjs (2.7.0)
     exifr (1.2.5)
     ffi (1.9.14)
-    font-awesome-sass (4.2.2)
-      sass (~> 3.2)
     fspath (2.1.1)
     haml (4.0.7)
       tilt
@@ -151,7 +149,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  font-awesome-sass
   image_optim
   jquery-middleman
   middleman (~> 3.3.12)
