@@ -17,6 +17,16 @@
   padding: 2.25em 4.25em 1.25em;
   box-shadow: none;
 
+  .navbar-item {
+    text-align: center;
+    width: 50%;
+
+    @include mq(phablet) {
+      text-align: left;
+      width: initial;
+    }
+  }
+
   .container-flex {
     flex-direction: column;
   }
@@ -53,8 +63,8 @@
 }
 
 .navbar-link {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   font-size: em(11px, 15px);
   font-weight: 600;
   line-height: 6.4rem;
