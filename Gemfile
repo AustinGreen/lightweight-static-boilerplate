@@ -10,5 +10,3 @@ gem 'image_optim'
 gem 'middleman-imageoptim'
 gem "middleman-sprockets"
 gem 'uglifier'
-gem "rack-zippy"
-gem 'zippy_static_cache'
