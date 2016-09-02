@@ -117,7 +117,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rack-zippy (3.0.1)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -143,7 +142,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    zippy_static_cache (0.0.1)
 
 PLATFORMS
   ruby
@@ -156,6 +154,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   middleman-sprockets
-  rack-zippy
   uglifier
-  zippy_static_cache
+
+BUNDLED WITH
+   1.12.5
