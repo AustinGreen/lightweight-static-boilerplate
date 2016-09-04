@@ -155,6 +155,9 @@ DEPENDENCIES
   middleman-minify-html
   middleman-sprockets
   uglifier
+<<<<<<< Updated upstream
 
 BUNDLED WITH
    1.12.5
+=======
+>>>>>>> Stashed changes
