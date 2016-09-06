@@ -5,7 +5,7 @@
   box-shadow: 0 1px 5px rgba(0,0,0,0.13);
 }
 
-.navbar-fixed {
+.navbar--fixed {
   position: fixed;
   width: 100%;
   background-color: $white;
@@ -17,7 +17,7 @@
   padding: 2.25em 4.25em 1.25em;
   box-shadow: none;
 
-  .navbar-item {
+  .navbar__item {
     text-align: center;
     width: 50%;
 
@@ -27,18 +27,18 @@
     }
   }
 
-  .container-flex {
+  .container--flex {
     flex-direction: column;
   }
-  .navbar-brand {
+  .navbar__brand {
     font-size: 1.5em;
   }
-  .navbar-link {
+  .navbar__link {
     font-size: 0.75em;
   }
 }
 
-.navbar-brand {
+.navbar__brand {
   font-size: 1.2em;
   font-weight: 600;
   color: palette(black, light);
@@ -51,18 +51,18 @@
   }
 }
 
-.navbar-list {
+.navbar__list {
   list-style: none;
   margin-bottom: 0;
 }
 
-.navbar-item {
+.navbar__item {
   position: relative;
   float: left;
   margin-bottom: 0;
 }
 
-.navbar-link {
+.navbar__link {
   margin-left: 0.5em;
   margin-right: 0.5em;
   padding: 0.8em 1em;
