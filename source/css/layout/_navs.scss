@@ -73,13 +73,13 @@
   text-transform: uppercase;
   letter-spacing: .2rem;
   text-decoration: none;
-  transition: $clean-transition;
+  transition: $transition;
   border-top: 3px solid rgba(0,0,0,0);
   border-bottom: 3px solid rgba(0,0,0,0);
 
   &:hover {
-    border-top: 3px solid map-get($ui-colors, default);
-    border-bottom: 3px solid map-get($ui-colors, default);
+    border-top: 3px solid palette(ui, base);
+    border-bottom: 3px solid palette(ui, base);
     color: palette(black, light);
   }
 

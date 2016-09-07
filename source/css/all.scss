@@ -64,7 +64,7 @@
 .values {
   background-image: url('../img/values-bg.jpg');
   background-size: cover;
-  color: #fff;
+  color: $white;
   padding-bottom: 5rem;
   min-height: 100vh;
 }
@@ -91,7 +91,7 @@
 .categories {
   background-image: url('../img/values-bg.jpg');
   background-size: cover;
-  color: #fff;
+  color: $white;
 }
 .categories .section-description { 
   margin-bottom: 4rem;

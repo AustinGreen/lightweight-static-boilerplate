@@ -37,7 +37,7 @@ textarea {
 
 input:focus, 
 textarea:focus {
-	transition: $trns_duration;
+	transition: $transition--duration;
 }
 
 button {

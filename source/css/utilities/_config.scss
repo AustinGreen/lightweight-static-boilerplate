@@ -18,6 +18,8 @@ $font-weight--ultra-bold : 900;
 $white : #fff;
 $black : #0b0b0b;
 $grey  : #797e83;
+
+// Base UI Colors — used to indicate state, provide feedback
 $curious-blue   : #3498db;
 $emerald        : #5ece7f;
 $sunglo         : #e67478;
@@ -25,10 +27,15 @@ $coral          : #ff784f;
 $purple-majesty : #9279c3;
 $scooter        : #39add1;
 
+// AZ Projects colors — project specific choices
+$boston-blue: #3887be;
+$cloud-burst: #1d334b;
+$alabaster  : #f8f8f8;
+
 // Color Usage
-$color-primary   : $curious-blue;
-$color-secondary : $scooter;
-$color-accent    : $emerald;
+$color-primary   : $boston-blue;
+$color-secondary : $cloud-burst;
+$color-accent    : $alabaster;
 $color-shadow    : rgba($black, .2);
 
 // Color Palette Modifiers
@@ -45,21 +52,17 @@ $color-palettes: (
     light    : lighten($black, 10%),
     base     : $black,
     dark     : darken($black, 10%)
+  ),
+  ui: (
+    base    : $curious-blue,
+    success : $emerald,
+    error   : $sunglo,
+    warning : $coral,
+    info    : $purple-majesty
   )
 );
 
-// UI Colors
-
-$ui-colors: (
-  default : $curious-blue,
-  success : $emerald,
-  error   : $sunglo,
-  warning : $coral,
-  info    : $purple-majesty
-);
-
 // Text
-
 $base__font-size : 16px;
 $base__line      : 24px;
 $letter-space    : 1px;
@@ -70,8 +73,8 @@ $br--default     : .4em;
 $br--round       : 50%;
 
 // Transitions
-$trns-duration   : .3s;
-$clean-transition: all .3s ease-in-out;
+$transition: all .3s ease-in-out;
+$transition--duration: .3s;
 
 // Path to Assets
 $path--rel       : "../img";
