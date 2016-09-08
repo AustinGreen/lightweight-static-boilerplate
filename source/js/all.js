@@ -18,20 +18,20 @@
 // });
 
 // Hide and show nav
-$(document).ready(function(){
-  // hide .navbar first
-  $(".navbar-fixed").hide();
+// $(document).ready(function(){
+//   // hide .navbar first
+//   $(".navbar-fixed").hide();
   
-  // fade in .navbar
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > $(window).height()) {
-        $('.navbar--fixed').fadeIn();
-      } else {
-        $('.navbar--fixed').fadeOut();
-      }
-    });
-  });
-});
+//   // fade in .navbar
+//   $(function () {
+//     $(window).scroll(function () {
+//       if ($(this).scrollTop() > $(window).height()) {
+//         $('.navbar--fixed').fadeIn();
+//       } else {
+//         $('.navbar--fixed').fadeOut();
+//       }
+//     });
+//   });
+// });
 
 $(document).ready(function(){$("body").hide().fadeIn(1000);});

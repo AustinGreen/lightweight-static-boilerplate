@@ -15,9 +15,9 @@ body {
 }
 
 a {
-  color: $link-color;
+  color: $color--link;
   &:hover {
-    color: darken($link-color, 5%);
+    color: darken($color--link, 5%);
   }
 }
 
@@ -98,7 +98,11 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
 }
 
 p {
+  font-size: 1.7rem;
   margin-top: 0;
+  @include mq(phablet) { font-size: 1.8rem; }
+  @include mq(tablet)  { font-size: 1.9rem; }
+  @include mq(desktop) { font-size: 2.1rem; }
 }
 
 // ==========================================================================
@@ -142,8 +146,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: lighten($light-grey, 6.4%);
-  border: 1px solid $light-grey;
+  background: palette(grey, x-light);
+  border: 1px solid palette(grey, light);
   border-radius: $global-radius;
 }
 
@@ -160,7 +164,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid palette(grey, light);
 }
 
 th:first-child,
