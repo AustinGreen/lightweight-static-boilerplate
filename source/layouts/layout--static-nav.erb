@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= current_page.data.title || "Boilerplate" %></title>
+
+  <%= stylesheet_link_tag "all" %>
+</head>
+<body class="<%= page_classes %>">
+  <nav class="navbar navbar--static">
+    <div class="container--flex">
+      <div class="navbar__header">
+        <a class="navbar__brand" href="/">
+          az projects
+          <!-- <img src="../img/logo.png" alt="Logo"> -->
+        </a>
+      </div>
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a class="navbar__link" href="/">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/about-us">About Us</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/portfolio">Portfolio</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <%= yield %>
+  <%= javascript_include_tag "all" %>
+</body>
+</html>
+  
