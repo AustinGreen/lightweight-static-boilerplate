@@ -34,4 +34,4 @@
 //   });
 // });
 
-$(document).ready(function(){$("body").hide().fadeIn(1000);});
+// $(document).ready(function(){$("body").hide().fadeIn(1000);});
