@@ -125,6 +125,10 @@ button.button-primary:focus {
   box-shadow: $box-shadow;
 }
 
+.button--pill {
+  border-radius: 999rem;
+}
+
 input {
   &[type="submit"].button-primary:focus,
   &[type="reset"].button-primary:focus,
