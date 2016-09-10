@@ -3,23 +3,6 @@
   margin-top: 4em;
 }
 
-.blog-post__header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.blog-post__heading {
-	margin-top: 0;
-	text-shadow: $text-shadow;
-	color: $white;
-
-	strong {
-		color: $black;
-	}
-}
-
 .blog-post__body p:first-child:first-letter {
 	float: left;
 	color: #2a2a2a;
