@@ -1,4 +1,24 @@
 // Experimental feature
+.blog-post {
+  margin-top: 4em;
+}
+
+.blog-post__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.blog-post__heading {
+	margin-top: 0;
+	text-shadow: $text-shadow;
+	color: $white;
+
+	strong {
+		color: $black;
+	}
+}
 
 .blog-post__body p:first-child:first-letter {
 	float: left;
@@ -35,8 +55,6 @@ header#main-header li.more span,header#main-header li a {
 	color: #6b8699;
 	text-shadow: 0 1px 0 hsla(0,0%,100%,.2)
 }
-
-
 
 #main-content header {
 	position: relative;
@@ -95,9 +113,6 @@ header#main-header li.more span,header#main-header li a {
 	background-size: 100% 100%
 }
 
-
-
-
 .call-to-action {
 	display: flex;
 	justify-content: center
@@ -106,8 +121,6 @@ header#main-header li.more span,header#main-header li a {
 .call-to-action div {
 	position: relative
 }
-
-
 
 #main-content p.learn-more a:hover:after {
 	animation: arrow-bounce 1s cubic-bezier(.4,.04,.4,1)
@@ -140,8 +153,6 @@ header#main-header li.more span,header#main-header li a {
 	will-change: transform,opacity
 }
 
-
-
 #atlas-logo .glyph,#main-content header h1 {
 	animation-timing-function: cubic-bezier(.2,1,.2,1);
 	animation-delay: 2.1s
@@ -167,7 +178,6 @@ main {
 
 #main-content header .call-to-action .main-action,#main-content header .call-to-action .shadow {
 	animation: fade-buttons .7s backwards;
-	margin-right: 30px;
 }
 
 #main-content header .call-to-action .request-access * {

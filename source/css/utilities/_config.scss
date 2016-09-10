@@ -32,13 +32,11 @@ $boston-blue : #3887be;
 $cloud-burst : #1d334b;
 $alabaster   : #f8f8f8;
 
-
 // Color Usage
-$color--primary   : $boston-blue;
-$color--secondary : $cloud-burst;
-$color--accent    : $alabaster;
-$color--shadow    : rgba($black, .2);
-$color--link      : $cloud-burst;
+$color--primary        : $boston-blue;
+$color--secondary      : $cloud-burst;
+$color--accent         : $alabaster;
+$color--link           : $cloud-burst;
 
 // Color Palette Modifiers
 $color-palettes: (
@@ -78,6 +76,10 @@ $br--round       : 50%;
 $transition           : all .3s ease-in-out;
 $transition--duration : .3s;
 
+// Shadows
+$text-shadow : 0 1px 2px rgba(0,30,50,.55);
+$box-shadow  : 0 4px 7px rgba(0,33,60,.4);
+
 // Path to Assets
 $path--rel       : "../img";
 
@@ -98,8 +100,8 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 //Grid Variables
 $container-width                     : 1280px !default; // 960px
-$container-width-larger-than-mobile  : 100% !default; // 85%
-$container-width-larger-than-phablet : 100% !default; // 80%
+$container-width-larger-than-mobile  : 90% !default; // 85%
+$container-width-larger-than-phablet : 85% !default; // 80%
 $total-columns                       : 12 !default;
 $column-width                        : 100 / $total-columns !default; // calculates individual column width based off of # of columns
 $column-margin                       : 4% !default; // space between columns

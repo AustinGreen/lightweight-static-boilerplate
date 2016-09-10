@@ -1,5 +1,16 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
+.button-group {
+  display: flex;
+}
+
+.button-group--center {
+  justify-content: center;
+}
+
+.button-group .button {
+  margin-right: 2em;
+}
 
 .button,
 button {
@@ -20,6 +31,7 @@ button {
   border: 1px solid palette(grey, light);
   cursor: pointer;
   box-sizing: border-box;
+  transition: $transition;
 }
 
 input {
@@ -119,6 +131,10 @@ button.button-primary:focus {
   color: $white;
   background-color: $color--link;
   border-color: $color--link;
+}
+
+.button--shadow {
+  box-shadow: $box-shadow;
 }
 
 input {
