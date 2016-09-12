@@ -2,23 +2,23 @@
 layout: layout--static-nav
 ---
 <!-- Experimental feature -->
-<div class="hero nav-animation-element">
-	<svg viewBox="0 0 1226 340" class="hero__hero-curve--rainbow" preserveAspectRatio="none">
+<div class="hero">
+	<svg viewBox="0 0 1226 340" class="hero__hero-curve hero__hero-curve--pos0" preserveAspectRatio="none">
 		<defs>
 			<linearGradient x1="100%" y1="0%" x2="0%" y2="15%" id="back-rainbow-gradient">
-				<stop stop-color="#8DC6D8" offset="12%"></stop>
-				<stop stop-color="#CE97DF" offset="40%"></stop>
-				<stop stop-color="#FFCF9F" offset="90%"></stop>
+				<stop stop-color="#7B7197" offset="12%"></stop>
+				<stop stop-color="#B0ADD8" offset="40%"></stop>
+				<stop stop-color="#D5D1DF" offset="90%"></stop>
 			</linearGradient>
 		</defs>
 		<path d="M1074 0C673.94.2 303.56 126 0 340h1226V6c-50.1-3.72-100.95-5.8-152-6z" fill="url(#back-rainbow-gradient)"></path>
 	</svg>
-	<svg viewBox="0 0 1031 475" class="hero__hero-curve--rainbow-2" preserveAspectRatio="none">
+	<svg viewBox="0 0 1031 475" class="hero__hero-curve hero__hero-curve--pos1" preserveAspectRatio="none">
 		<defs>
 			<linearGradient x1="100%" y1="0%" x2="0%" y2="25%" id="front-rainbow-gradient">
-				<stop stop-color="#00D7B9" offset="0%"></stop>
-				<stop stop-color="#B95DD7" offset="50%"></stop>
-				<stop stop-color="#FFB367" offset="100%"></stop>
+				<stop stop-color="#6C668C" offset="0%"></stop>
+				<stop stop-color="#8A85AB" offset="50%"></stop>
+				<stop stop-color="#D0CDFB" offset="100%"></stop>
 			</linearGradient>
 		</defs>
 		<path d="M0 475h1031V0C630.46 33.34 270 208.52 0 475z" fill="url(#front-rainbow-gradient)" fill-opacity="0.65"></path>
@@ -30,15 +30,9 @@ layout: layout--static-nav
 		<path d="M1280 3.9V110H0C194 71.33 662-19.9 1280 3.9z" fill="#fff"></path>
 	</svg>
 	<h1 class="hero__heading"><strong>Introducing Artivest.</strong> Access exceptional investing.</h1>
-	<section class="call-to-action button-group button-group--center">
-		<div class="request-access">
-			<span class="shadow"></span>
-			<button class="main-action button button-primary button--shadow button-">Request access</button>
-		</div>
-		<div class="learn-more">
-			<span class="shadow"></span>
-			<a class="main-action button button-primary button--shadow button-" href="/atlas/faq">Explore the FAQ</a>
-		</div>
+	<section class="hero__button-group button-group button-group--center">
+		<button class="hero__button button button--primary button--shadow">Request access</button>
+		<button class="hero__button button button--primary button--shadow" href="/atlas/faq">Explore the FAQ</button>
 	</section>
 </div>
 <article class="container blog-post">

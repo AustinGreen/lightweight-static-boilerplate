@@ -80,42 +80,42 @@ input {
   }
 }
 
-.button.button-primary,
-button.button-primary {
+.button.button--primary,
+button.button--primary {
   color: $white;
   background-color: $color--primary;
   border-color: $color--primary;
 }
 
 input {
-  &[type="submit"].button-primary,
-  &[type="reset"].button-primary,
-  &[type="button"].button-primary {
+  &[type="submit"].button--primary,
+  &[type="reset"].button--primary,
+  &[type="button"].button--primary {
     color: $white;
     background-color: $color--primary;
     border-color: $color--primary;
   }
 }
 
-.button.button-primary:hover,
-button.button-primary:hover {
+.button.button--primary:hover,
+button.button--primary:hover {
   color: $white;
   background-color: $color--link;
   border-color: $color--link;
 }
 
 input {
-  &[type="submit"].button-primary:hover,
-  &[type="reset"].button-primary:hover,
-  &[type="button"].button-primary:hover {
+  &[type="submit"].button--primary:hover,
+  &[type="reset"].button--primary:hover,
+  &[type="button"].button--primary:hover {
     color: $white;
     background-color: $color--link;
     border-color: $color--link;
   }
 }
 
-.button.button-primary:focus,
-button.button-primary:focus {
+.button.button--primary:focus,
+button.button--primary:focus {
   color: $white;
   background-color: $color--link;
   border-color: $color--link;
@@ -130,9 +130,9 @@ button.button-primary:focus {
 }
 
 input {
-  &[type="submit"].button-primary:focus,
-  &[type="reset"].button-primary:focus,
-  &[type="button"].button-primary:focus {
+  &[type="submit"].button--primary:focus,
+  &[type="reset"].button--primary:focus,
+  &[type="button"].button--primary:focus {
     color: $white;
     background-color: $color--link;
     border-color: $color--link;

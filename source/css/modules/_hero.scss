@@ -8,7 +8,7 @@
 	justify-content: center;
 	overflow: hidden;
 	height: 44em;
-	background: linear-gradient(#e8eef2,#d3dde4 200px);
+	background: linear-gradient(#e8eef2, #d3dde4 200px);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
@@ -28,6 +28,16 @@
 	display: none;
 }
 
+@supports (mix-blend-mode:overlay) {
+	.hero--bottom-shadow {
+		display: block;
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+		mix-blend-mode: overlay;
+		opacity: .8;
+	}
+}
+
 /* Heading Element */
 .hero__heading {
 	margin-top: 0;
@@ -38,75 +48,15 @@
 	animation-fill-mode: forwards;
 	transform: perspective(800px) rotateX(-60deg) translateY(50px);
 	animation-duration: .85s;
+	opacity: 0;
+	text-align: center;
+	will-change: transform, opacity;
+	animation-timing-function: cubic-bezier(.2, 1, .2, 1);
+	animation-delay: 2.1s;
 
 	strong {
 		color: $black;
 	}
-}
-
-/* Curve element w/ rainbow color mod */
-.hero__hero-curve--rainbow {
-	width: 96%;
-	height: 340px;
-	right: 0;
-}
-
-.hero__hero-curve--rainbow-2 {
-	width: 81%;
-	height: 475px;
-	right: 0;
-}
-
-@supports (mix-blend-mode:overlay) {
-	.hero--bottom-shadow {
-		display: block;
-		-webkit-filter: blur(10px);
-		filter: blur(10px);
-		mix-blend-mode: overlay;
-		opacity: .8
-	}
-}
-.call-to-action {
-	display: flex;
-	justify-content: center
-}
-
-.call-to-action div {
-	position: relative
-}
-
-
-.hero__hero-curve--rainbow,
-.hero__hero-curve--rainbow-2 {
-	transform: translate(100%,500px);
-	animation: rainbow-slide 1.2s cubic-bezier(.2,1,.2,1) .5s forwards;
-}
-
-.hero__hero-curve--rainbow-2 {
-	animation-delay: .7s;
-}
-
-@keyframes rainbow-slide {
-	to {
-		transform: none
-	}
-}
-
-#atlas-logo span,.hero h1 {
-	opacity: 0;
-	text-align: center;
-	will-change: transform,opacity
-}
-
-#atlas-logo .glyph,.hero h1 {
-	animation-timing-function: cubic-bezier(.2,1,.2,1);
-	animation-delay: 2.1s
-}
-
-main {
-	animation-duration: 1s;
-	animation-delay: 2.3s;
-	animation-timing-function: cubic-bezier(.6,0,.3,1)
 }
 
 @keyframes fade-content {
@@ -116,21 +66,44 @@ main {
 	}
 }
 
-.hero .call-to-action .main-action,.hero .call-to-action .shadow {
-	animation: fade-buttons .7s backwards;
+/* Curve element w/ rainbow color mod */
+.hero__hero-curve {
+	transform: translate(100%, 500px);
+	@include animation('hero-slide 1.2s cubic-bezier(.2, 1, .2, 1) .5s forwards');
 }
 
-.hero .call-to-action .request-access * {
-	animation-delay: 2.2s
+@include keyframes(hero-slide) {
+	to { transform: none; }
 }
 
-.hero .call-to-action .learn-more * {
-	animation-delay: 2.4s
+.hero__hero-curve--pos0 {
+	width: 96%;
+	height: 340px;
+	right: 0;
 }
 
-@keyframes fade-buttons {
+.hero__hero-curve--pos1 {
+	width: 81%;
+	height: 475px;
+	right: 0;
+	animation-delay: .7s;
+}
+
+/* Button group and button elements */
+
+.hero__button {
+	position: relative;
+	@include animation('fade-buttons .7s backwards');
+	animation-delay: 2.4s;
+}
+
+@include keyframes(fade-buttons) {
 	0% {
 		opacity: 0;
-		transform: perspective(800px) rotateX(-50deg) translateY(30px)
+		transform: perspective(800px) rotateX(-50deg) translateY(30px);
 	}
+}
+
+.hero__button:first-child {
+	animation-delay: 2.2s;
 }
