@@ -49,9 +49,10 @@ $color-palettes: (
     x-dark   : darken($grey, 16%)
   ),
   black: (
-    light    : lighten($black, 10%),
-    base     : $black,
-    dark     : darken($black, 10%)
+    x-light    : lighten($black, 16%),
+    light      : lighten($black, 10%),
+    base       : $black,
+    dark       : darken($black, 10%)
   ),
   ui: (
     base     : $curious-blue,

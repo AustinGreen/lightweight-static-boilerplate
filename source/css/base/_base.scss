@@ -12,7 +12,7 @@ body {
 	font-weight: 400;
 	font-family: $font-family--primary;
   -webkit-font-smoothing: antialiased;
-	color: palette(black, light);
+	color: palette(black, x-light);
 }
 
 a {
@@ -69,7 +69,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 // ==========================================================================
@@ -100,7 +100,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; margin-top: 1.5em;
 
 p {
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1.4;
   margin-top: 0;
   font-family: $font-family--secondary;
   @include mq(phablet) { font-size: 1.7rem; }
