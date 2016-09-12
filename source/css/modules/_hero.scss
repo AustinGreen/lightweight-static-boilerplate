@@ -8,7 +8,7 @@
 	justify-content: center;
 	overflow: hidden;
 	height: 44em;
-	background: linear-gradient(#e8eef2, #d3dde4 200px);
+	background: linear-gradient(to bottom, $color--secondary 0%, $color--primary 100%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
