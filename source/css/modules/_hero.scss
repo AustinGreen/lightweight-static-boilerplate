@@ -25,6 +25,8 @@
 }
 
 .hero--bottom-shadow {
+	width: 100%;
+	height: 110px;
 	display: none;
 }
 
@@ -34,7 +36,7 @@
 		-webkit-filter: blur(10px);
 		filter: blur(10px);
 		mix-blend-mode: overlay;
-		opacity: .8;
+		opacity: .25;
 	}
 }
 
