@@ -1,7 +1,6 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-.button,
-button {
+.button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -20,7 +19,47 @@ button {
   cursor: pointer;
   box-sizing: border-box;
   transition: $transition;
+  
+  &:hover {
+    color: palette(grey, dark);
+    border-color: lighten(palette(grey, dark), 33.3%);
+    outline: 0;
+  }
+
+  &:focus {
+    color: palette(grey, dark);
+    border-color: lighten(palette(grey, dark), 33.3%);
+    outline: 0;
+  }
 }
+
+.button--primary {
+  color: $white;
+  background-color: $color--primary;
+  border-color: $color--primary;
+
+  &:hover {
+    color: $white;
+    background-color: $color--link;
+    border-color: $color--link;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $color--link;
+    border-color: $color--link;
+  }
+}
+
+.button--shadow {
+  box-shadow: $box-shadow;
+}
+
+.button--pill {
+  border-radius: 999rem;
+}
+
+
 
 input {
   &[type="submit"],
@@ -46,13 +85,6 @@ input {
   }
 }
 
-.button:hover,
-button:hover {
-  color: palette(grey, dark);
-  border-color: lighten(palette(grey, dark), 33.3%);
-  outline: 0;
-}
-
 input {
   &[type="submit"]:hover,
   &[type="reset"]:hover,
@@ -61,13 +93,6 @@ input {
     border-color: lighten(palette(grey, dark), 33.3%);
     outline: 0;
   }
-}
-
-.button:focus,
-button:focus {
-  color: palette(grey, dark);
-  border-color: lighten(palette(grey, dark), 33.3%);
-  outline: 0;
 }
 
 input {
@@ -80,13 +105,6 @@ input {
   }
 }
 
-.button.button--primary,
-button.button--primary {
-  color: $white;
-  background-color: $color--primary;
-  border-color: $color--primary;
-}
-
 input {
   &[type="submit"].button--primary,
   &[type="reset"].button--primary,
@@ -95,13 +113,6 @@ input {
     background-color: $color--primary;
     border-color: $color--primary;
   }
-}
-
-.button.button--primary:hover,
-button.button--primary:hover {
-  color: $white;
-  background-color: $color--link;
-  border-color: $color--link;
 }
 
 input {
@@ -114,21 +125,6 @@ input {
   }
 }
 
-.button.button--primary:focus,
-button.button--primary:focus {
-  color: $white;
-  background-color: $color--link;
-  border-color: $color--link;
-}
-
-.button--shadow {
-  box-shadow: $box-shadow;
-}
-
-.button--pill {
-  border-radius: 999rem;
-}
-
 input {
   &[type="submit"].button--primary:focus,
   &[type="reset"].button--primary:focus,
@@ -137,6 +133,7 @@ input {
     background-color: $color--link;
     border-color: $color--link;
   }
+  
   &[type="email"],
   &[type="number"],
   &[type="search"],
