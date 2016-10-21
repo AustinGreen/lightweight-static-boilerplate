@@ -1,0 +1,25 @@
+.footer {
+	padding: 2em 2.75em;
+	background-color: palette(gray, xx-light);
+}
+
+.footer__social-icons .fa {
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+	color: palette(black, light);
+	transition: $transition;
+
+	&:hover {
+		color: palette(black, light);
+	}
+
+	@include mq(tablet) {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+
+	@include mq(desktop) {
+		margin-left: 0.75em;
+		margin-right: 0.75em;
+	}
+}
