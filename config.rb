@@ -40,6 +40,8 @@ configure :development do
   activate :livereload
 end
 
+# sass_options = {:sourcemap => true}
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
