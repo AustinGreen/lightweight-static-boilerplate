@@ -1,5 +1,5 @@
 # Lightweight, Static-Site Boilerplate
-A modern starting point for building static websites. Utilizes middleman, skeleton, and other front-end technologies to build a high-performing product. It is architected using sass, flexbox, smaccss, bem-naming, and other helpful tools. The boilerplate was built with a focus on UX, speed, accessibility, usability, reliability, mobile-first design, responsive development, and cutting-edge UI design principles.
+Utilizes middleman, skeleton, sass, flexbox, smaccss, bem-naming, a focus on UX, speed, accessibility, usability, reliability, mobile-first design, responsive development, and cutting-edge UI design principles.
 
 ### Project To-do list:
 - [ ] Improve typography, color palette, fonts, and other base styles. Should simple, and intuitive like [Rithm School](https://www.rithmschool.com).
